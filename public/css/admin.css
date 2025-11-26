@@ -1,0 +1,130 @@
+css marcus
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: black;
+    color: white;
+ 
+}
+ 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+ 
+.logo img {
+    width: 200px;
+    height: auto;
+}
+ 
+nav ul {
+    display: flex;
+    gap: 120px;
+    list-style: none;
+    margin-left: 350px;
+   
+}
+ 
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+}
+ 
+nav ul a:hover {
+    color: #cb9216;
+    transform: scale(1.3);
+}
+/* Main */
+main {
+    margin-top: 150px;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+/* Cabeçalho da tabela */
+.all {
+    display: grid;
+    grid-template-columns: 50px 200px 150px 200px 100px 100px 100px;
+    gap: 10px;
+    padding: 15px;
+    background-color: #272121;
+    font-weight: bold;
+    border-bottom: 2px solid #cb9216;
+}
+ 
+#comentarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+ 
+/* Container de agendamentos */
+#agendamentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+ 
+/* Cada agendamento */
+.agendamento-pai {
+    display: grid;
+    grid-template-columns: 50px 200px 150px 200px 100px 100px 100px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1f1b1b;
+    border-bottom: 1px solid #444;
+    font-size: 18px;
+}
+ 
+/* Botão excluir */
+.excluir-btn {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #dba93c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.excluir-btn:hover {
+    background-color: #dba93c;
+    color: black;
+}
+ 
+/* Responsivo */
+@media screen and (max-width: 1024px) {
+    .all, .agendamento-pai {
+        grid-template-columns: 40px 150px 120px 150px 80px 80px 80px;
+        font-size: 16px;
+    }
+    nav ul {
+        font-size: 16px;
+        gap: 30px;
+    }
+}
+ 
+@media screen and (max-width: 600px) {
+    .all, .agendamento-pai {
+        grid-template-columns: 30px 100px 80px 100px 70px 70px 70px;
+        font-size: 14px;
+    }
+    nav ul {
+        font-size: 14px;
+        gap: 15px;
+    }
+}
+ 

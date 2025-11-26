@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio55</title>
+   <link rel="stylesheet" href="./css/agendar.css">
+  <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/Assets/logo2.png" alt="Logotipo do Studio55">
+    </div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="agendar.html">Agendamentos</a>
+    </nav>
+  </header>
+ 
+  <section class="titulo">
+    <h1>Escolha o seu horário</h1>
+    <div class="linha"></div>
+  </section>
+ 
+  <main>
+    <section class="conteudo">
+ 
+      <!-- Seleção de dias -->
+      <div class="dias-semana">
+        <button><span>seg</span><br><small>05/01</small></button>
+        <button><span>ter</span><br><small>06/01</small></button>
+        <button><span>qua</span><br><small>07/01</small></button>
+        <button><span>quin</span><br><small>08/01</small></button>
+        <button><span>sex</span><br><small>09/01</small></button>
+        <button><span>sab</span><br><small>10/01</small></button>
+        <button><span>seg</span><br><small>12/01</small></button>
+        <button><span>ter</span><br><small>13/01</small></button>
+        <button><span>qua</span><br><small>14/01</small></button>
+        <button><span>quin</span><br><small>15/01</small></button>
+        <button><span>sex</span><br><small>16/01</small></button>
+        <button><span>sab</span><br><small>17/01</small></button>
+        <button><span>seg</span><br><small>19/01</small></button>
+      </div>
+ 
+      <!-- Seleção de horários -->
+      <div class="horas" id="horarios">
+       <button>08:00</button>
+       <button>09:00</button>
+       <button>10:00</button>
+       <button>11:00</button>
+       <button>12:00</button>
+       <button>13:00</button>
+       <button>14:00</button>
+       <button>15:00</button>
+       <button>16:00</button>
+       <button>17:00</button>
+       <button>18:00</button>
+       <button>19:00</button>
+      </div>
+ 
+      <!-- Seleção de serviços -->
+      <label for="Servicos">Serviços</label>
+      <div class="div-select">
+        <input type="text" id="nome" placeholder="Nome completo" required minlength="10" oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')">
+        <input type="text" id="telefone" placeholder="Telefone" required maxlength="15" oninput="mascaraTelefone(this)">
+      </div>
+      <select id="Servicos" name="Serviços">
+        <option value="Corte reto">Corte reto</option>
+        <option value="Corte em camadas">Corte em camadas</option>
+        <option value="Corte chanel">Corte chanel</option>
+        <option value="Corte pixie">Corte pixie</option>
+        <option value="Wolfcut">Wolfcut</option>
+        <option value="Butterfly haircut">Butterfly haircut</option>
+        <option value="Ruivo">Ruivo</option>
+        <option value="Loiro global">Loiro global</option>
+        <option value="Platinado">Platinado</option>
+        <option value="Luzes">Luzes</option>
+        <option value="Preto Natural">Preto Natural</option>
+        <option value="Castanho Iluminado">Castanho Iluminado</option>
+        <option value="Semi Preso">Semi Preso</option>
+        <option value="Trança">Trança</option>
+        <option value="Trança boxeadora">Trança boxeadora</option>
+        <option value="Trança cascata">Trança cascata</option>
+        <option value="Coque Trançado">Coque Trançado</option>
+        <option value="Coque Despojado">Coque Despojado</option>
+      </select>
+ 
+      <!-- Campos de nome e telefone -->
+ 
+      <!-- Botão para agendar -->
+      <button class="agendar" id="btnAgendar">Agendar!</button>
+ 
+      <!-- Link para admin -->
+      <a href="admin.html" class="admbutton">Administração</a>
+ 
+      <div class="linhafooter"></div>
+ 
+      <!-- Avaliações -->
+      <div class="avaliacao-form">
+        <input type="text" class="nomeava"  id="nomeAvaliacao" placeholder="Nome:" required oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')">
+        <textarea  class="textoava"  id="textoAvaliacao" placeholder="Enviar Texto:"maxlength="300"></textarea>
+        <!--<button  id="lista-avalia" class="avaliacao"
+        onclick="enviarAvaliação()">Enviar Avaliação</button>-->
+        <button class="avaliacao" onclick="enviarAvaliacao()">Enviar Avaliação</button>
+      </div>
+ 
+      <div class="linha"></div>
+      <p id="lista-avaliacoes" class="ava">Avaliações</p>
+    </section>
+  </main>
+ 
+  <footer class="avaliacoes">
+    <div class="avaliacao-card"></div>
+  </footer>
+ 
+  <!-- JS -->
+  <script src="/main.js"></script>
+</body>
+</html>
+ 
+ 
+ 

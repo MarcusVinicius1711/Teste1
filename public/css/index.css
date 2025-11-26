@@ -1,0 +1,335 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #151414;
+  width: 1000px;
+}
+.logo{
+  position: fixed;
+  bottom: 845px;
+  display: flex;
+  z-index: 1;
+  padding-top: 15px;
+  width: 180px;
+  left: 20px;
+}
+.inicial{
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+.beleza{
+  color: white;
+  position: absolute;
+  display: flex;
+  top: 650px;
+  left: 580px;
+  font-size: 50px;
+}
+.linha{
+  background-color: #000000;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  position: fixed;
+}
+.pagina2{
+  position: absolute;
+  height: 85%;
+  top: 620px;
+  left: 170px;
+  width: 75%;
+}
+.subtitulo{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 920px;
+  left: 1030px;
+  font-size: 35px;
+}
+.coisas{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 990px;
+  left: 900px;
+  font-size: 30px;
+  text-indent: 20px;
+}
+.pagina3{
+  position: absolute;
+  height: 95%;
+  top: 1100px;
+  text-align: center;
+  width: 85%;
+  left: 160px;
+}
+.cortes{
+  position: absolute;
+  display: flex;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+  font-family: sans-serif;
+  top: 1620px;
+  left: 477px;
+  border: 2px solid white;
+}
+.coloracoes{
+  position: absolute;
+  display: flex;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+  font-family: sans-serif;
+  top: 1620px;
+  left: 900px;
+  border: 2px solid white;
+}
+.penteado{
+  position: absolute;
+  display: flex;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+  font-family: sans-serif;
+  top: 1620px;
+  left: 1340px;
+  border: 2px solid white;
+}
+.divisao{
+  background-color: #2b2a2a;
+  width: 100%;
+  height: 2px;
+  top: 1735px;
+  position: absolute;
+}
+.contato{
+  color: white;
+  position: absolute;
+  top: 1770px;
+  left: 405px;
+  font-size: 25px;
+}
+.endereco{
+   color: white;
+  position: absolute;
+  top: 1770px;
+  left: 1115px;
+  font-size: 25px;
+}
+.insta{
+  position: absolute;
+  top: 1810px;
+  height: 50px;
+  left: 380px;
+}
+.zap{
+  position: absolute;
+  top: 1865px;
+  height: 50px;
+  left: 395px;
+}
+.gmail{
+  position: absolute;
+  top: 1920px;
+  height: 50px;
+  left: 395px;
+}
+.infgmail{
+  position: absolute;
+  top: 1930px;
+  color: white;
+  left: 455px;
+  font-size: 22px;
+}
+.infi{
+  position: absolute;
+  top: 1820px;
+  color: white;
+  left: 455px;
+  font-size: 22px;
+}
+.infz{
+  position: absolute;
+  top: 1875px;
+  color: white;
+  left: 455px;
+  font-size: 22px;
+}
+.rua{
+  position:absolute;
+  top: 1830px;
+  color: white;
+  left: 1050px;
+  font-size: 24px;
+}
+.ruadois{
+  position: absolute;
+  top: 1865px;
+  color: white;
+  left: 950px;
+  font-size: 24px;
+  text-indent: 100px;
+}
+.creditos{
+  position: absolute;
+  top: 1915px;
+  color: white;
+  left: 1050px;
+  font-size: 20px;
+}
+nav a{
+  text-decoration: none;
+  color: #f1f6f8;
+  z-index: 1;
+}
+nav ul{
+  list-style: none;
+  margin: 10px;
+  padding: 25px;
+  display: inline-flex;
+  gap: 150px;
+  justify-content: center;
+  position: fixed;
+  left: 520px;
+  z-index: 1;
+  font-size: 30px;
+}
+nav a:hover{
+  color: #dba93c;
+}
+@media screen and (max-width: 1024px){
+  .logo{
+    top: -20px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 190px;
+  }
+  nav ul{
+    left: 210px;
+    gap: 90px;
+    font-size: xx-large;
+    position: absolute;
+  }
+  .linha{
+    position: absolute;
+  }
+  .inicial{
+    width: 101%;
+  }
+  .beleza{
+    font-size: 30px;
+    left: 320px;
+    top: 355px;
+  }
+  .pagina2{
+    top: 340px;
+    width: 85%;
+    height: 45%;
+    left: 60px;
+  }
+  .subtitulo{
+    top: 480px;
+    left: 550px;
+  }
+  .coisas{
+    top: 560px;
+    left: 520px;
+  }
+  .pagina3{
+    top: 750px;
+    width: 100%;
+    height: 50%;
+    left: 15px;
+  }
+  .cortes{
+    top: 1140px;
+    left: 200px;
+  }
+  .coloracoes{
+    top: 1140px;
+    left: 460px;
+  }
+  .penteado{
+    top: 1140px;
+    left: 740px;
+  }
+  .contato{
+    top: 1270px;
+    left: 50px;
+  }
+  .insta{
+    top: 1330px;
+    left: 30px;
+  }
+  .infi{
+    top: 1340px;
+    left: 90px;
+  }
+  .zap{
+    top: 1380px;
+    left: 43px;
+  }
+  .infz{
+    top: 1390px;
+    left: 92px;
+  }
+  .gmail{
+    top: 1430px;
+    left: 40px;
+  }
+  .infgmail{
+    top: 1440px;
+    left: 90px;
+  }
+  .rua{
+    top: 1300px;
+    left: 600px;
+  }
+  body{
+    height: 2000px;
+    width: 50%;
+  }
+  .ruadois{
+    top: 1320px;
+    left: 600px;
+  }
+}
+@media screen and  (max-width: 430px){
+  .inicial{
+    width: 155%;
+    top: 20px;
+  }
+  .beleza{
+    width: 110%;
+  }
+  .pagina2{
+    width: 185%;
+    height: 60%;
+    margin-top: 70px;
+    left: -5%;
+  }
+  .subtitulo{
+    font-size: 30px;
+    margin-top: 40px;
+    width: 30%;
+    left: 420px;
+  }
+  .coisas{
+    top: 100px;
+    width: 145%;
+    margin-top: 485px;
+    left: 400px;
+    font-size: 35px;
+  }
+}
+ 
