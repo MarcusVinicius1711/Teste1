@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 const dotenv = require("dotenv");
-const mysql2 = require("mysql2");
+const postgres = require("pg");
 dotenv.config({ path: "./.env" });
 
 
@@ -12,8 +12,8 @@ const sequelize = new Sequelize(
   {
     host: process.env.MYSQLHOST,
     port: process.env.MYSQLPORT,
-    dialect: "mysql",
-    dialectModule: mysql2,
+    dialect: "postgres",
+    dialectModule: postgres,
     logging: false,
     pool: {max: 5, min: 0, idle:30000, acquire: 10000}
   }
