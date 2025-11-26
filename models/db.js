@@ -6,7 +6,7 @@ dotenv.config({ path: "./.env" });
 
 // Exemplo para MySQL
 const sequelize = new Sequelize(
-  process.env.MYSQL_DATABASE,
+  process.env.MYSQLDATABASE,
   process.env.MYSQLUSER,
   process.env.MYSQLPASSWORD,
   {
