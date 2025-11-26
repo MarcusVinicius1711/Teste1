@@ -15,6 +15,13 @@ const sequelize = new Sequelize(
     dialect: "postgres",
     dialectModule: postgres,
     logging: false,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      },
+    },
+    //
     pool: {max: 5, min: 0, idle:30000, acquire: 10000}
   }
 );
