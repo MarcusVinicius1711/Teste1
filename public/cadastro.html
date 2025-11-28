@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,46 @@
   <link rel="stylesheet" href="./static/cadastro.css">
   <link rel="shortcut icon" href="../Assets/favicon.novo2.png" type="image/x-icon">
 </head>
+
 <body>
   <header>
     <img class="logo" src="../Assets/55 (2).png" alt="55 (2).png">
     <nav>
-        <ul>
-           <li><a href="index.html" class="home">Home</a></li>
-           <li><a href="about.html" class="sobrenos">Sobre</a></li>
-           <li><a href="servicos.html" class="services">Serviços</a></li>
-           <li><a href="agendar.html" class="agenda">Agendamentos</a></li>
-        </ul>
+      <ul>
+        <a href="/public/index.html">Home</a>
+        <a href="/public/about.html">Sobre</a>
+        <a href="/public/servicos.html">Serviços</a>
+        <a href="/public/agendar.html">Agendamentos</a>
+      </ul>
     </nav>
   </header>
-  
+
   <main>
-  <div class="login-container">
-    <form> 
-      <label for="nome">Nome</label>
-      <input type="nome" id="nome" placeholder="Digite seu nome...">
+    <div class="login-container">
+      <form>
+        <label for="nome">Nome</label>
+        <input type="nome" id="nome" placeholder="Digite seu nome...">
 
-      <label for="telefone">Telefone</label>
-      <input type="telefone" id="telefone" placeholder="Digite seu número..." maxlength="16">
-      
-
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Digite seu email...">
-
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" placeholder="Digite sua senha..." maxlength="20">
+        <label for="telefone">Telefone</label>
+        <input type="telefone" id="telefone" placeholder="Digite seu número..." maxlength="16">
 
 
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email...">
 
-    <button type="submit">Cadastrar <link rel="stylesheet" href=""></button>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha..." maxlength="20">
 
-    
-    </form>  
-  </div>
-</main>
+
+
+        <button type="submit">Cadastrar
+          <link rel="stylesheet" href="">
+        </button>
+
+
+      </form>
+    </div>
+  </main>
 </body>
+
 </html>
