@@ -12,7 +12,7 @@ const app = express();
 const { sequelize } = require("./models/db.js");
 const Usuario = require("./models/Usuario.js");
 const Servico = require("./models/Servico.js");
-const Agendamento = require("./models/Agendamento.js");
+const agendamento = require("./models/Agendamento.js");
 const Avaliacao = require("./models/Avaliacao.js");
 
 // Sincronização do banco
@@ -48,7 +48,7 @@ app.post('/api/agendamento', async (req, res) => {
       return res.status(400).json({ error: 'Todos os campos são obrigatórios!' });
     }
 
-    const novo = await Agendamento.create({ nome, telefone, servico, data, horario });
+    const novo = await agendamento.create({ nome, telefone, servico, data, horario });
 
     res.json({ message: "Agendamento criado!", agendamento: novo });
 
@@ -61,7 +61,7 @@ app.post('/api/agendamento', async (req, res) => {
 // Listar agendamentos
 app.get('/api/agendamentos', async (req, res) => {
   try {
-    const lista = await Agendamento.findAll({
+    const lista = await agendamento.findAll({
       order: [['data', 'ASC'], ['horario', 'ASC']]
     });
 
@@ -78,7 +78,7 @@ app.delete('/api/agendamento/:id', async (req, res) => {
   try {
     const { id } = req.params;
 
-    const apagado = await Agendamento.destroy({ where: { id } });
+    const apagado = await agendamento.destroy({ where: { id } });
 
     if (!apagado) {
       return res.status(404).json({ error: "Agendamento não encontrado." });
