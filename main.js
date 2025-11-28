@@ -134,7 +134,34 @@ function atualizarHorariosDoDia() {
     btn.style.display = ocupado ? 'none' : 'inline-block';
   });
 }
- 
+//========================================
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Pega os parâmetros da URL
+  const params = new URLSearchParams(window.location.search);
+  const servicoSelecionado = params.get("servico");
+
+  // Se existir parâmetro "servico"
+  if (servicoSelecionado) {
+    const select = document.getElementById("Servicos");
+
+    // Define o valor no select
+    select.value = servicoSelecionado;
+
+    // Caso o valor não exista no select, não quebra
+    if (select.value !== servicoSelecionado) {
+      // Cria opção dinamicamente
+      const novaOpcao = document.createElement("option");
+      novaOpcao.value = servicoSelecionado;
+      novaOpcao.textContent = servicoSelecionado;
+      select.appendChild(novaOpcao);
+
+      // Seleciona a nova opção
+      select.value = servicoSelecionado;
+    }
+  }
+
+});
 //====AVALIAÇÕES====
  
  
