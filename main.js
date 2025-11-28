@@ -326,7 +326,7 @@ function enviarAvaliacao() {
 }
  
 function carregarAvaliacoes() {
-  fetch("http://localhost:10000/api/avaliacoes")
+  fetch("https://studio55.onrender.com/api/avaliacoes")
   .then(res => res.json())
   .then(lista => {
       const container = document.querySelector("footer.avaliacoes");
