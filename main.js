@@ -1,4 +1,5 @@
-const API_BASE = 'http://localhost:10000/api';
+const API_BASE = "https://studio55.onrender.com/api";
+
  
  
 //SERVIÇOS
