@@ -8,13 +8,11 @@ body{
   width: 1000px;
 }
 .logo{
-  position: fixed;
-  bottom: 845px;
-  display: flex;
-  z-index: 1;
-  padding-top: 15px;
-  width: 180px;
-  left: 20px;
+  height: 120px;
+  width: auto;
+  position: relative;
+  top: -9px;
+  left: -181px;
 }
 .inicial{
   position: absolute;
