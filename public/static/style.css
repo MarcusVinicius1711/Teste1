@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #151414;
+  background-color: #000000;
   width: 1000px;
 }
 .logo{
@@ -331,5 +331,4 @@ nav a:hover{
     left: 400px;
     font-size: 35px;
   }
-}
- 
+};

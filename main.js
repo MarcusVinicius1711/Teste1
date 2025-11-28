@@ -284,7 +284,7 @@ function enviarAvaliacao() {
       return;
   }
  
-  fetch("http://localhost:10000/api/avaliacoes", {
+  fetch("https://studio55.onrender.com/api/avaliacoes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, texto })
