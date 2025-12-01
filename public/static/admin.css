@@ -100,22 +100,72 @@ main {
 /* Responsivo */
 @media screen and (max-width: 1024px) {
     .all, .agendamento-pai {
-        grid-template-columns: 40px 150px 120px 150px 80px 80px 80px;
+        grid-template-columns: 50px 100px 100px 100px 100px 100px 100px;
         font-size: 16px;
     }
     nav ul {
         font-size: 16px;
-        gap: 30px;
+        gap: 90px;
+        margin-left: 50px;
+    }
+    .logo{
+        img{
+            width: 150px;
+        }
     }
 }
 
-@media screen and (max-width: 600px) {
-    .all, .agendamento-pai {
-        grid-template-columns: 30px 100px 80px 100px 70px 70px 70px;
-        font-size: 14px;
+@media screen and (max-width: 480px) {
+ 
+    /* Header */
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
+ 
+    .logo img {
+        width: 150px;
+    }
+ 
     nav ul {
-        font-size: 14px;
-        gap: 15px;
+        margin-left: 0;
+        gap: 40px;
+        font-size: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-};
+ 
+    nav ul a {
+        font-size: 16px;
+    }
+ 
+    /* Main */
+    main {
+        margin-top: 80px;
+        width: 100%;
+        padding: 0 10px;
+    }
+ 
+    /* Ajuste da tabela */
+    .all,
+    .agendamento-pai {
+        grid-template-columns:
+            25px  /* ID */
+            90px  /* Nome */
+            70px  /* Serviço */
+            90px  /* Dia */
+            60px  /* Hora */
+            60px  /* Telefone */
+            60px  /* Botão */;
+       
+        font-size: 12px;
+        padding: 8px;
+    }
+ 
+    .excluir-btn {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+}

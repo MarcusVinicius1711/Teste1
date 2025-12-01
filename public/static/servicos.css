@@ -220,7 +220,7 @@ main{
 }
  
 /* ====================== MOBILE ====================== */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 520px) {
  
     body{
         background-image: none;
@@ -245,7 +245,7 @@ main{
     }
  
     .menu ul a{
-        font-size: 14px;
+        font-size: 16px;
     }
  
     main {
@@ -284,7 +284,7 @@ main{
     }
  
     .quadrado span{
-        font-size: 12px;
+        font-size: 10px;
     }
  
     .botao{
@@ -294,7 +294,7 @@ main{
 }
  
 /* ====================== TABLET ====================== */
-@media screen and (min-width: 391px) and (max-width:1024px){
+@media screen and (min-width: 521px) and (max-width:1024px){
  
     body {
         background-image: none;

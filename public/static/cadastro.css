@@ -1,136 +1,143 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 
-body{
-    background-color: #252424
+body {
+  background-color: #252424
 }
 
- header{
-        
-    height: 110px;
-        align-items: flex-start;
-        justify-content: flex-end;
-        padding: 10px;
-        display: flex;
+header {
 
-     }
-    header img{
-        position: absolute;
-        z-index: 1;
-        width: 200px;
-        left: 20px;
-        display: flex;
-        
-    }
-      nav a {
-        text-decoration: none;
-        color: #f1f6f8;
-        font-weight: bold;
-    display: flex; 
-    }
-        
-        
-        nav ul{
-    list-style: none;
-    margin: 10px;
-    padding: 25px;
-    
-    gap: 180px;
+  height: 110px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px;
+  display: flex;
+
+}
+
+header img {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  left: 20px;
+  display: flex;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1f6f8;
+  font-weight: bold;
+  display: flex;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 25px;
+
+  gap: 180px;
   justify-content: center;
   position: fixed;
   left: 450px;
   display: flex;
 }
-nav ul{
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
+
+nav ul {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
 }
+
 nav ul a:hover {
-    color: #dba93c;
-    transform: scale(1.3);
+  color: #dba93c;
+  transform: scale(1.3);
 }
 
-  .login-container{ 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-font-size: larger;
-padding: 100px;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  padding: 100px;
 
 }
-    
-    .login-container form{
-        display: flex;
-        flex-direction: column;
-        color: #f8f3f3;
-        font-size: larger;
-        width: 50%;
-       
-    }
-        
-    .login-container label{
-        margin-top: 25px;
-        margin-bottom: 10px;
-        
-    }
 
-    .login-container input{
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-        background-color: transparent;
-        color: #fff;
-        font-size: medium;
-    }
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  color: #f8f3f3;
+  font-size: larger;
+  width: 50%;
 
-    .login-container input::placeholder{
-        color: #90959775;
-        font-size: large;
-    }
-
-    .login-container button{
-        margin-top: 20px;
-            padding: 12px;
-                border: none;
-                border-radius: 10px;
-                font-weight: bold;
-                background-color: transparent;
-                
-                
-             }
-             .login-container button{
-                border: 1px solid #fff;
-             }
-
-    .login-container [type= submit] {
-        background-color: #cb9216;
-        color: #292727;
-        font-size: large;
-        padding: 10px;
-        margin-top: 30px;
-        width: 90%;
-        justify-content: center;
-        margin-left: 36px;
-        cursor: pointer;
-    }
-
-.home{
-    font-weight: 100;
-}
-.sobrenos{
-    font-weight: 100;
-}
-.services{
-    font-weight: 100;
 }
 
+.login-container label {
+  margin-top: 25px;
+  margin-bottom: 10px;
 
- 
+}
+
+.login-container input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: medium;
+}
+
+.login-container input::placeholder {
+  color: #90959775;
+  font-size: large;
+}
+
+.login-container button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: transparent;
+
+
+}
+
+.login-container button {
+  border: 1px solid #fff;
+}
+
+.login-container [type=submit] {
+  background-color: #cb9216;
+  color: #292727;
+  font-size: large;
+  padding: 10px;
+  margin-top: 30px;
+  width: 90%;
+  justify-content: center;
+  margin-left: 36px;
+  cursor: pointer;
+}
+
+.home {
+  font-weight: 100;
+}
+
+.sobrenos {
+  font-weight: 100;
+}
+
+.services {
+  font-weight: 100;
+}
+
+
+
 @media screen and (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -208,4 +215,6 @@ padding: 100px;
     width: 100%;
     margin-left: 0;
   }
-};
+}
+
+;

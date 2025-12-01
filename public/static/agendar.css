@@ -284,11 +284,12 @@ footer.avaliacoes {
   font-size: 30px;
   transition: 0.3s;
 }
-
-  select {
-    width: 80%;
+.div-select input{
+  width: 500px;
+}
+ select {
+    width: 50%;
   }
-
   .avaliacao-card {
     width: 45%;
   }
@@ -301,7 +302,9 @@ footer.avaliacoes {
     align-items: stretch;
     
   }
-
+  .div-select input{
+  width: 350px;
+}
   .menu {
     margin: 0px;
     gap: 10px;

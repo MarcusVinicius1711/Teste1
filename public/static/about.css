@@ -1,3 +1,4 @@
+css corrigido da rillary
 *{
   margin: 0px;
   padding: 0px;
@@ -5,7 +6,7 @@
 }
  
 body{
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
  
 header{
@@ -26,7 +27,6 @@ nav ul{
   display: flex;
   gap: 75px;
   align-items: center;
-  list-style: none;
   position: relative;
   left: -400px;
 }
@@ -82,84 +82,89 @@ p{
   top: 200px;
 }
  
-@media (max-width: 1024px) {
-
+@media screen and (max-width: 480px) {
+ 
+  header{
+    padding: 0;
+    margin-top: 0;     /* se você não quer espaço no topo */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  nav ul {
+    display: flex;
+    left: 2%;
+    gap: 0px;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+ 
+  nav ul a {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+  }
+ 
+  .foto1{
+    position: relative; /* necessário para left e top funcionarem */
+    height: 90px;
+    width: 140px;
+    left: 0;            /* deixei ajustado */
+    top: 0;
+  }
+ 
+  .foto2,
+  .foto3,
+  .line-absolute{
+    display: none;
+  }
+ 
+  h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  p{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+}
+ 
+ 
+@media screen and (min-width: 481px) and (max-width:1024px){
   header{
     width: 100%;
   }
-
   nav a{
     position: relative;
     left: 60px;
     font-size: 30px;
   }
-
   .foto1{
     height: 100px;
     width: 150px;
     left: 10px;
-    top: 14px;
+    top: -0px;
   }
-
   .line-absolute{
     display: none;
   }
-
   .foto2, .foto3 {
     display: none;
   }
-
   nav ul{
     display: flex;
     gap: 40px;
     left: 80px;
   }
-
   h1{
     font-size: 60px;
   }
-
   p{
     font-size: 30px;
 }  
-
 }
-
- 
-
-@media (max-width: 480px){
-
-  header{
-  padding: 0px;
-  margin-top: 90px;
-  width: 100%;
-  }
-
-  nav a{
-    position: relative;
-    left: 10px;
-    font-size: 16px;
-  }
-
-  nav ul{
-    gap: 0px;
-  }
-
-  .foto1{
-    height: 90px;
-    width: 140px;
-    left: 120px;
-  }
-
-  h1{
-    font-size: 50px;
-    align-items: center;
-    margin-top: 25px;
-  }
-
-  p{
-    font-size: 25px;
-    margin: 30px;
-
-  }
-};
