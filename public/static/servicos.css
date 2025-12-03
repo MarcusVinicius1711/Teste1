@@ -1,18 +1,18 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
  
 /* ====================== DESKTOP ====================== */
 body{
     background-color: #000000;
+    width: 100%;
 }
  
 header{
     width: 100%;
     display: flex;
-    background-color: #000000;
+    background-color: transparent;
     padding: 15px 40px;
     align-items: center;
     height: 120px;
@@ -223,11 +223,12 @@ main{
 @media screen and (max-width: 520px) {
  
     body{
-        background-image: none;
-        background-color: #151414;
+        background-color: #000000;
+        width: 100%;
     }
  
     header{
+        display: flex;
         flex-direction: column;
         padding: 10px;
         height: auto;
@@ -236,11 +237,11 @@ main{
     }
  
     .logo{
-        height: 60px;
+        height: 80px;
     }
  
     .menu ul{
-        margin: 0;
+        margin: auto;
         gap: 25px;
     }
  
@@ -286,11 +287,6 @@ main{
     .quadrado span{
         font-size: 10px;
     }
- 
-    .botao{
-        width: 140px; /* mesmo estilo, versão reduzida para caber */
-        height: 50px;
-    }
 }
  
 /* ====================== TABLET ====================== */
@@ -298,23 +294,25 @@ main{
  
     body {
         background-image: none;
-        background-color: #151414;
+        background-color: #000000;
+        width: 100%;
     }
  
     header {
         background-color: transparent;
-        padding: 10px 20px;
+        padding: 20px;
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;
     }
  
     .logo{
-        height: 80px;
+        height: 90px;
     }
  
     .menu ul {
+        padding: -20px;
         gap: 60px;
-        margin-right: auto;
+        margin-left: auto;
     }
  
     .menu ul a {
@@ -322,7 +320,7 @@ main{
     }
  
     main {
-        padding: 20px;
+        padding: 120px;
         flex-direction: column;
         align-items: center;
     }
@@ -344,17 +342,12 @@ main{
  
     .quadrados {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         max-width: 280px;
         gap: 10px;
     }
  
     .quadrado span {
         font-size: 16px;
-    }
- 
-    .botao{
-        width: 180px;
-        height: 60px;
     }
 };
